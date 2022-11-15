@@ -24,7 +24,32 @@
 // //  }else {
 // //     echo 'dalinti is numelio negaliu'
 // //  }
-// //      }
+
+
+
+
+// // ----------Užduotis-04------------
+
+// $a = rand(1, 10);
+// $b = rand(1, 10);
+// $c = rand(1, 10);
+
+// echo $a . " ". $b . " ". $c. '<br>';
+
+// if (($a + $b > $c) && ($b + $c > $a) && ($c + $a > $b)) {
+//     echo 'Gaunasi trikampis';
+// }else{
+//     echo 'Nesigauna trikampis';
+//  }
+
+// ----------Užduotis2-01----------
+// Sukurti du kintamuosius. Jiems priskirti savo mylimo aktoriaus vardą ir pavardę kaip stringus (Jonas Jonaitis). Atspausdinti trumpesnį stringą.
+
+$vardas = 'Tomas';
+$pavarde = 'Tomauskas';
+
+
+echo substr('Tomas'. 'Tomauskas', 5 );
 
 
 
@@ -45,18 +70,6 @@
 
 
 
-
-
-$numeris = rand(0,4);
-$numeris1 = rand(0,4);
-
-echo $number ' ' $number1 '<br>';
-
-if ($numeris > $numeris1){
-echo 'pirma dalinsiu is antro'. ($number / $numeris1);
-}else{
-    echo 'antra dalinsiu is pirmo'. (#number1 / $number);
-}
 
 
 
