@@ -62,12 +62,24 @@
 
 // ----------Užduotis2-03----------
 
-$vardas = 'Paul';
-$pavarde = 'Walker';
-$subtringas = 'P W';
+// $vardas = 'Paul';
+// $pavarde = 'Walker';
+// $subtringas = $vardas[0]. ' ' .$pavarde[0];
 
-echo $vardas[0]. ' ' .$pavarde[0]. '<br>';
-echo $subtringas;
+// echo $subtringas;
+
+
+
+
+// ----------Užduotis2-04----------
+
+$vardas = 'James';
+$pavarde = 'Mcavoy';
+$trysSkaiciai = substr($vardas, 2).' ' .substr($pavarde, 3);
+
+echo $trysSkaiciai
+
+
 
 
 
