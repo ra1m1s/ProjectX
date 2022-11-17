@@ -81,13 +81,17 @@
 
 // ----------Užduotis2-05----------
 
+// $tekstas = 'An American in Paris';
+// $replace = array('A', 'a');
+
+// echo str_replace($replace, '*', $tekstas);
+
+// ----------Užduotis2-06----------
+
 $tekstas = 'An American in Paris';
-$replace = array('A', 'a');
 
-
-echo str_replace($replace, '*', $tekstas);
-
-
+echo 'A-'. substr_count($tekstas,'A'). '<br>';
+echo 'a-'. substr_count($tekstas, 'a');
 
 
 
