@@ -54,10 +54,20 @@
 
 // ----------Užduotis2-02----------
 
+// $vardas = 'Paul';
+// $pavarde = 'Walker';
+
+// echo strtoupper ($vardas). '  ' . strtolower ($pavarde)
+
+
+// ----------Užduotis2-03----------
+
 $vardas = 'Paul';
 $pavarde = 'Walker';
+$subtringas = 'P W';
 
-echo strtoupper ($vardas). '  ' . strtolower ($pavarde)
+echo $vardas[0]. ' ' .$pavarde[0]. '<br>';
+echo $subtringas;
 
 
 
