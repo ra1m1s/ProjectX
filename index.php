@@ -45,12 +45,19 @@
 // ----------Užduotis2-01----------
 // Sukurti du kintamuosius. Jiems priskirti savo mylimo aktoriaus vardą ir pavardę kaip stringus (Jonas Jonaitis). Atspausdinti trumpesnį stringą.
 
-$vardas = 'Tomas';
-$pavarde = 'Tomauskas';
+// $vardas = 'Tomas';
+// $pavarde = 'Tomauskas';
 
 
-echo substr('Tomas'. 'Tomauskas', 5 );
+// echo substr('Tomas'. 'Tomauskas', 5 );
 
+
+// ----------Užduotis2-02----------
+
+$vardas = 'Paul';
+$pavarde = 'Walker';
+
+echo strtoupper ($vardas). '  ' . strtolower ($pavarde)
 
 
 
