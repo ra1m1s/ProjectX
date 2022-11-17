@@ -73,11 +73,20 @@
 
 // ----------Užduotis2-04----------
 
-$vardas = 'James';
-$pavarde = 'Mcavoy';
-$trysSkaiciai = substr($vardas, 2).' ' .substr($pavarde, 3);
+// $vardas = 'James';
+// $pavarde = 'Mcavoy';
+// $trysSkaiciai = substr($vardas, 2).' ' .substr($pavarde, 3);
 
-echo $trysSkaiciai
+// echo $trysSkaiciai
+
+// ----------Užduotis2-05----------
+
+$tekstas = 'An American in Paris';
+$replace = array('A', 'a');
+
+
+echo str_replace($replace, '*', $tekstas);
+
 
 
 
