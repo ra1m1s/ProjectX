@@ -88,10 +88,26 @@
 
 // ----------Užduotis2-06----------
 
-$tekstas = 'An American in Paris';
+// $tekstas = 'An American in Paris';
 
-echo 'A-'. substr_count($tekstas,'A'). '<br>';
-echo 'a-'. substr_count($tekstas, 'a');
+// echo 'A-'. substr_count($tekstas,'A'). '<br>';
+// echo 'a-'. substr_count($tekstas, 'a');
+
+// ----------Užduotis2-07----------
+
+$tekstas = 'An American in Paris';
+$tekstas1 = 'Breakfast at Tiffanys”, “2001: A Space Odyssey';
+$tekstas3 = 'Its a Wonderful Life';
+$balses = array('A', 'a', 'E', 'e', 'I', 'i', 'Y', 'y', 'O', 'o', 'U', 'u'); 
+$visi = $tekstas. '</br>'. $tekstas1. '</br>'. $tekstas3 ;
+
+echo str_replace ($balses, ' ', $visi);
+
+
+
+
+
+
 
 
 
