@@ -168,16 +168,28 @@
 // echo "\n didesniu nei 150 yra ". $count;
 
 // ----------Užduotis3-3----------
-$skaicius = (3000.4000);
-$k = ' ';
-for($i = 0; $i < $skaicius; $i++){
-    if($i % 77 === 0 && $i !=0){
-        $k .= $i. ',';
+// $skaicius = (3000.4000);
+// $k = ' ';
+// for($i = 0; $i < $skaicius; $i++){
+//     if($i % 77 === 0 && $i !=0){
+//         $k .= $i. ',';
+//     }
+// };
+// echo rtrim($k, ',');
+
+// ----------Užduotis3-6-A--------
+
+$skaicius = 1;
+$herbas = 0;
+
+for($i = 0; $i < 1; $i++){
+    $rand = rand(0,1);
+    if($rand === 0){
+        echo 'H'; 
+    }else{
+        echo 'S';
     }
-};
-echo rtrim($k, ',');
-
-
+}
 
 
 
