@@ -179,19 +179,30 @@
 
 // ----------Užduotis3-6-A--------
 
-$skaicius = 1;
-$herbas = 0;
+// $skaicius = 1;
+// $herbas = 0;
 
-for($i = 0; $i < 1; $i++){
+while(true){
     $rand = rand(0,1);
-    if($rand === 0){
+    if($rand > 0){
         echo 'H'; 
-    }else{
+        break;
+    } else{
         echo 'S';
     }
 }
 
+// ----------Užduotis3-6-B--------
 
+// while(++$i > 3){
+//     $rand = rand(0,1);
+//     if($rand > 3){
+//         echo 'H';
+//         break;
+//     } else{
+//         echo 'S';
+//     }
+// }
 
 
 
