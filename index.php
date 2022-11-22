@@ -151,21 +151,32 @@
 
 // ----------Užduotis3-2----------
 
-$count = 0;
-for ($i = 0; $i < 300; $i++) {
-    $rand = rand(0,300);
-    if($rand > 150){
-     $count++;
-    }
-    if($rand > 275){
-echo '<span style="color:red">' .$rand. ' '. "</span>";
-    } else {
-    echo $rand. ' ';
-    }
+// $count = 0;
+// for ($i = 0; $i < 300; $i++) {
+//     $rand = rand(0,300);
+//     if($rand > 150){
+//      $count++;
+//     }
+//     if($rand > 275){
+// echo '<span style="color:red">' .$rand. ' '. "</span>";
+//     } else {
+//     echo $rand. ' ';
+//     }
    
-}
+// }
 
-echo "\n didesniu nei 150 yra ". $count;
+// echo "\n didesniu nei 150 yra ". $count;
+
+// ----------Užduotis3-3----------
+$skaicius = (3000.4000);
+$k = ' ';
+for($i = 0; $i < $skaicius; $i++){
+    if($i % 77 === 0 && $i !=0){
+        $k .= $i. ',';
+    }
+};
+echo rtrim($k, ',');
+
 
 
 
