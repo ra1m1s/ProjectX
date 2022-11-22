@@ -96,7 +96,7 @@
 // ----------Užduotis2-07----------
 
 // $tekstas = 'An American in Paris';
-// $tekstas1 = 'Breakfast at Tiffanys”, “2001: A Space Odyssey';
+// $tekstas1 = 'Breakfast at Tiffanys”;
 // $tekstas3 = 'Its a Wonderful Life';
 // $balses = array('A', 'a', 'E', 'e', 'I', 'i', 'Y', 'y', 'O', 'o', 'U', 'u'); 
 // $visi = $tekstas. '</br>'. $tekstas1. '</br>'. $tekstas3 ;
@@ -104,39 +104,68 @@
 // echo str_replace ($balses, ' ', $visi);
 
 
+
 // ----------Užduotis2-08----------
 
-// $tekstas = array 'Dont Be a Menace to South Central While Drinking Your Juice in the Hood'
-// if ($tekstas <= '5' $tekstas +++){
-// echo $tekstas;
-// }
-// ??????
+// ???????????
+
+
+
+// ----------Užduotis2-09----------
+
+
+// $tekstas = 'Dont Be a Menace to South Central While Drinking Your Juice in the Hood';
+// $arr = explode (' ', $tekstas);
+
+
+
+
 
 // ----------Užduotis2-10----------
 
-function generateRandomString($lenght = 3) {
-    $raides = 'abcdefghiyjklmnoprstuvz';
-    $zodis = strlen($raides);
-    $tekstas  = ' ';
-    for($i = 0; $i < $lenght; $i++) {
-        $tekstas .= $raides[rand(0, $zodis - 1)];
+// function generateRandomString($lenght = 3) {
+//     $raides = 'abcdefghiyjklmnoprstuvz';
+//     $zodis = strlen($raides);
+//     $tekstas  = ' ';
+//     for($i = 0; $i < $lenght; $i++) {
+//         $tekstas .= $raides[rand(0, $zodis - 1)];
+//     }
+//     return $tekstas;
+// }
+
+// echo generateRandomString();
+
+
+// ----------Užduotis4-2----------
+
+// $skaiciai = range (0, 300);
+// $daugiau = ' ';
+// shuffle($skaiciai);
+// for($i = 0; $i < 300; $i++){
+//     echo $skaiciai [$i]. '</br>'. ' ';
+//     if ($daugiau = 150; $daugiau > 150; $daugiau++){
+//         echo '<p>Daugiau 150'. $daugiau. ' ';
+//     } 
+// }
+
+
+// ----------Užduotis3-2----------
+
+$count = 0;
+for ($i = 0; $i < 300; $i++) {
+    $rand = rand(0,300);
+    if($rand > 150){
+     $count++;
     }
-    return $tekstas;
+    if($rand > 275){
+echo '<span style="color:red">' .$rand. ' '. "</span>";
+    } else {
+    echo $rand. ' ';
+    }
+   
 }
 
-echo generateRandomString();
-
-
-
-
-
-
-
-
-
-
-
-
+echo "\n didesniu nei 150 yra ". $count;
 
 
 
@@ -146,10 +175,6 @@ echo generateRandomString();
 ?>
 </body>
 </html>
-
-
-
-
 
 
 
