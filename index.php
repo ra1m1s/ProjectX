@@ -235,9 +235,11 @@ return rand(5,25);
 }
 for ($i = 0; $i <= 29; $i++){
     $array[$i] = random();
-    $count++;
+    
 }
 print_r ($array);
+
+
 
 ?>
 </body>
