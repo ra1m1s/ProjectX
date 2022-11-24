@@ -182,29 +182,62 @@
 // $skaicius = 1;
 // $herbas = 0;
 
-while(true){
-    $rand = rand(0,1);
-    if($rand > 0){
-        echo 'H'; 
-        break;
-    } else{
-        echo 'S';
-    }
-}
-
-// ----------Užduotis3-6-B--------
-
-// while(++$i > 3){
+// while(true){
 //     $rand = rand(0,1);
-//     if($rand > 3){
-//         echo 'H';
+//     if($rand > 0){
+//         echo 'H'; 
 //         break;
 //     } else{
 //         echo 'S';
 //     }
 // }
 
+// ----------Užduotis3-6-B--------
 
+// $counter = 0;
+// while(true){
+//     $rand = rand(0,1);
+//     if($rand === 0){
+//         echo 'H';
+//         $counter++;
+//     } else {    
+//     echo 'S';
+    
+// }
+// if($counter === 3){
+//     break;
+// }
+// }
+// ----------Užduotis3-6-C--------
+// $counter = 0;
+// while(true){
+//     $rand = rand(0,1);
+//     if($rand === 0){
+//         echo 'H';
+//         $counter++;
+//     } else {    
+//     echo 'S'; 
+//     $counter === 0;
+// }
+// if($counter === 3){
+//     break;
+// }
+// }
+
+// ----------Užduotis4-1---------Sugeneruokite masyvą iš 30 elementų (indeksai nuo 0 iki 29), kurių reikšmės yra atsitiktiniai skaičiai nuo 5 iki 25.
+
+$array = [];
+$count = 0;
+$reiksmes = 0;
+
+function random(){
+return rand(5,25);
+}
+for ($i = 0; $i <= 29; $i++){
+    $array[$i] = random();
+    $count++;
+}
+print_r ($array);
 
 ?>
 </body>
