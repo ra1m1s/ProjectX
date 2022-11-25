@@ -224,6 +224,8 @@
 // }
 // }
 
+
+
 // ----------Užduotis4-1---------Sugeneruokite masyvą iš 30 elementų (indeksai nuo 0 iki 29), kurių reikšmės yra atsitiktiniai skaičiai nuo 5 iki 25.
 
 // $array = [];
@@ -240,21 +242,51 @@
 
 
 
-// ----------Užduotis4-2---------
+// ----------Užduotis4-2A--------
+
+// $array = [];
+// $count = 0;
+
+// for($i = 0; $i <= 29; $i++){
+//     $array[$i] = $i;
+//     if ($array[$i] > 10){
+//         $count++;
+//     }
+// }
+// print_r ($array);
+// echo '<br>'. 'Reiksmiu didesniu uz 10: ' .$count;
+
+// ----------Užduotis4-2B--------
 
 $array = [];
 $count = 0;
 
-for($i = 0; $i <= 29; $i++){
-    $array[$i] = $i;
-    if ($array[$i] > 10){
-        $count++;
+
+
+function random(){
+return rand(5,25);
+}
+for ($i = 0; $i <= 29; $i++){
+    $array[$i] = random();
+
+}
+
+
+$maxVal = 0; 
+
+for($i = 0; $i < count($array); $i++ ){
+    if($maxVal < $array[$i]){
+        $maxVal == $array[$i];
     }
 }
-print_r ($array);
-echo '<br>'. 'Reiksmiu didesniu uz 10: ' .$count;
+$indeksas = [];
+for($i = 0; $i < count($array); $i++ ){
+    if($maxVal == $array[$i]){
+        $indeksas[] = $i;
+    }
+}
 
-
+print_r ($indeksas);
 ?>
 </body>
 </html>
